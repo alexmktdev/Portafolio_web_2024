@@ -1,0 +1,463 @@
+
+
+body {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    color: #555;
+    letter-spacing: 2px;
+    background-color: rgb(238, 244, 248);
+}
+
+/* estilos para la barra superior */
+.logo{
+    color:  rgb(49, 165, 219);;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(238, 244, 248);
+    color: #555;;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000; 
+}
+.navbar a {
+    color: #555;;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+.content {
+    padding-top: 60px; 
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px; 
+    margin-right: 15px;
+}
+
+.nav-link {
+    margin-left: 25px;
+    position: relative;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover { 
+    color: #000; 
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #000; 
+    transform: scaleX(0); 
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+.nav-link:hover::after {
+    transform: scaleX(1); 
+    transform-origin: bottom left;
+}
+
+@media (max-width: 992px) { 
+    .navbar-collapse {
+        justify-content: center !important;
+    }
+
+    .img-1{
+        margin-top: 100px;
+    }
+
+   .nav-link::after {
+        display: none; 
+    }
+
+    .img-tamaño{
+        height: auto;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+}
+
+/* seccion inicio */
+
+.separation{
+    margin-top: 100px;
+}
+
+.name-1, .name-2, .name-3{
+    
+    font-weight: bold;
+}
+
+.mt-100{
+    margin-top: 100px;
+}
+
+.up-colum{
+    margin-top: -40px;
+}
+
+.mb-100{
+    margin-bottom: 100px;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.names {
+    padding: 30px;
+}
+
+.d-flex-propio{
+   display: flex;
+   gap: 20px;
+}
+
+.icons-size{
+   font-size: 40px;  
+} 
+.img-tamaño{
+    height: auto;
+    width: 40%;
+}
+
+.image-hover {
+    width: 100%; /* Ajusta el tamaño inicial de la imagen */
+    transition: transform 1.3s ease-in-out; /* Controla la duración y la suavidad del efecto */
+}
+
+.image-hover:hover {
+    transform: scale(1.15); /* Escala la imagen al 110% de su tamaño original */
+}
+
+
+.hover-effect {
+    transition: transform 0.3s ease-in-out; /* Controla la duración y suavidad del movimiento */
+}
+
+.hover-effect:hover {
+    transform: translateY(-12px); /* Desplaza el div hacia arriba en 5px al pasar el cursor */
+}
+
+
+
+.a-cv{
+    margin-top: 40px;
+    text-decoration: none;
+    color: #555;
+    text-align: center;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+.a-cv:hover{
+    background-color: rgb(49, 165, 219);
+    color: #fff; /* Cambia el color del texto a blanco */
+    padding: 15px 25px; /* Incrementa el padding para que el recuadro se vea más grande */
+    border-radius: 15px; /* Bordes redondeados para el recuadro */
+    font-weight: bold;
+}
+
+
+
+/* estilos para el formulario */
+/* Estilos para las tarjetas */
+.card {
+    border-radius: 10px;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Estilos personalizados para el formulario */
+
+
+form .form-label {
+    font-weight: 600;
+}
+
+form .form-control {
+    border-radius: 5px;
+}
+
+form .form-select {
+    border-radius: 5px;
+}
+
+form .form-check-input {
+    margin-top: 0.3rem;
+}
+
+form .btn-primary {
+    border-radius: 5px;
+    background-color: #007bff; /* Azul de Bootstrap */
+    border-color: #007bff;
+}
+
+
+.div-escalado {
+    transform: scale(0.9); /* Escala el div al 150% de su tamaño original */
+}
+
+.btn-enviar{
+    background-color: rgb(49, 165, 219);
+    color: #fff; /* Cambia el color del texto a blanco */
+    padding: 15px 25px; /* Incrementa el padding para que el recuadro se vea más grande */
+    border-radius: 15px; /* Bordes redondeados para el recuadro */
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+
+.btn-enviar:hover {
+    transform: scale(1.1); /* Escala el botón al 110% de su tamaño original */
+}
+
+
+
+/* estilos acerca de  mi */ 
+
+.descripcion {
+    margin: 20px auto; 
+    padding: 15px; 
+    max-width: 1000px; 
+}
+
+ .mt-educacion {
+    margin-top: -60px;
+}
+
+.descripcion p {
+    text-align: justify; 
+    text-justify: inter-word; 
+}
+
+.descripcion p {
+    text-align: justify; 
+    text-justify: inter-word; 
+}
+
+
+.highlight-box {
+    padding: 15px;
+    background-color: #ffffff;
+    color: grey;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.highlight-box:hover {
+    background-color:  rgb(49, 165, 219);
+    color: white;
+    transform: scale(1.0);
+}
+
+.row.mb-4 {
+    margin-bottom: 2rem;
+}
+
+.col-md-4 p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.col-md-8 p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media (min-width: 100rem ) {
+
+    #inicio{
+        margin-top: 180px;
+    }
+    #acerca {
+        margin-top: 300px;
+    }
+}
+
+/* estilos habilidades */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 900px; 
+    margin: 0 auto; 
+}
+
+.grid-item {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.grid-item img {
+    max-width: 50px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.grid-item p {
+    font-size: 0.9rem; 
+    margin: 0;
+}
+
+.grid-item:hover {
+    transform: scale(1.2); 
+    cursor: pointer;
+}
+
+.text-area {
+    padding: 20px;
+    background-color: #f0f4f8;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    max-width: 900px; 
+    margin: 0 auto; 
+}
+
+.hab-b{
+    list-style-type: none;
+}
+
+
+
+/* estilos proyectos */ 
+
+.card-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.card-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-link {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.overlay-link:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.card-project img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/*  estilos footer */ 
+
+.footer {
+    background-color:  rgb(215, 236, 247);
+    
+    color: gray;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer h5 {
+    color: #f8f9fa;
+    margin-bottom: 15px;
+}
+
+.footer a {
+    color: #adb5bd;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer .container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer ul {
+    padding-left: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
